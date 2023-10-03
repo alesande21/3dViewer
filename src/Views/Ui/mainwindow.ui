@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1500</width>
+    <height>1000</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1500</width>
+    <height>1000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="vertical_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1500</width>
+      <height>1000</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="s21::DrawWidget" name="widget" native="true">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>1500</width>
+         <height>1000</height>
+        </size>
+       </property>
+       <widget class="QLabel" name="name_obj">
+        <property name="geometry">
+         <rect>
+          <x>930</x>
+          <y>945</y>
+          <width>561</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+          <kerning>true</kerning>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Текстуры</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="call_color_ui">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1479</x>
+      <y>100</y>
+      <width>31</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>6</width>
+      <height>3</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>200</height>
+     </size>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Стиль QPushButton */
+QPushButton {
+    background-color: rgb(255, 151, 57);
+    color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    /*transition: width 0.5s;*/ /* Анимация увеличения высоты */
+}
+
+/* Стиль QPushButton при нажатии */
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #FF7832, stop: 1 #FF9739);
+}
+
+/* Стиль QPushButton при наведении */
+QPushButton:hover {
+    width: 100px;
+}
+
+/* Стиль QLabel */
+QLabel {
+    transform: rotate(180);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Ц</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1135</x>
+      <y>20</y>
+      <width>351</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 20px;          </string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+   </widget>
+   <widget class="QPushButton" name="call_transform_ui">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1480</x>
+      <y>140</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>6</width>
+      <height>3</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>200</height>
+     </size>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Стиль QPushButton */
+QPushButton {
+    background-color: rgb(255, 151, 57);
+    color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    /*transition: width 0.5s;*/ /* Анимация увеличения высоты */
+}
+
+/* Стиль QPushButton при нажатии */
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #FF7832, stop: 1 #FF9739);
+}
+
+/* Стиль QPushButton при наведении */
+QPushButton:hover {
+    width: 100px;
+}
+
+/* Стиль QLabel */
+QLabel {
+    transform: rotate(180);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>П</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="call_camera_ui">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1480</x>
+      <y>180</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>6</width>
+      <height>3</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>200</height>
+     </size>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 1px solid gray;
+  border-radius: 5px;            
+	/*transition: width 0.5s;*/ /* Анимация увеличения высоты */
+}
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #FF7832, stop: 1 #FF9739);
+}
+
+QPushButton:hover {
+	width: 100px;
+}
+
+
+QLabel {
+    transform: rotate(180);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>К</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="call_light_ui">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1480</x>
+      <y>220</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>6</width>
+      <height>3</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>200</height>
+     </size>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 1px solid gray;
+  border-radius: 5px;            
+	/*transition: width 0.5s;*/ /* Анимация увеличения высоты */
+}
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #FF7832, stop: 1 #FF9739);
+}
+
+QPushButton:hover {
+	width: 100px;
+}
+
+
+QLabel {
+    transform: rotate(180);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>С</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="call_texture_ui">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1480</x>
+      <y>260</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>6</width>
+      <height>3</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>200</height>
+     </size>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 1px solid gray;
+  border-radius: 5px;            
+	/*transition: width 0.5s; *//* Анимация увеличения высоты */
+}
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #FF7832, stop: 1 #FF9739);
+}
+
+QPushButton:hover {
+	width: 100px;
+}
+
+
+QLabel {
+    transform: rotate(180);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Т</string>
+    </property>
+   </widget>
+   <zorder>vertical_widget</zorder>
+   <zorder>horizontalWidget</zorder>
+   <zorder>call_color_ui</zorder>
+   <zorder>call_transform_ui</zorder>
+   <zorder>call_camera_ui</zorder>
+   <zorder>call_light_ui</zorder>
+   <zorder>call_texture_ui</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1500</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <widget class="QMenu" name="make_screen">
+     <property name="title">
+      <string>Сохранить картинку</string>
+     </property>
+     <addaction name="image"/>
+     <addaction name="gif"/>
+    </widget>
+    <addaction name="open_file"/>
+    <addaction name="save_settings"/>
+    <addaction name="load_settings"/>
+    <addaction name="make_screen"/>
+    <addaction name="auto_rtn"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <action name="open_file">
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+  </action>
+  <action name="save_settings">
+   <property name="text">
+    <string>Сохранить настройки</string>
+   </property>
+  </action>
+  <action name="load_settings">
+   <property name="text">
+    <string>Загрузить настройки</string>
+   </property>
+  </action>
+  <action name="image">
+   <property name="text">
+    <string>в формате bmp/jpeg</string>
+   </property>
+  </action>
+  <action name="gif">
+   <property name="text">
+    <string>в формате gif</string>
+   </property>
+  </action>
+  <action name="auto_rtn">
+   <property name="text">
+    <string>Вращение объекта(авто)</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>s21::DrawWidget</class>
+   <extends>QWidget</extends>
+   <header>Views/include/Draw/DrawWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
